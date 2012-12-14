@@ -9,7 +9,7 @@ require 'rubygems'
 require 'json'
 require 'xmlsimple'
 
-#input = File.read('test/tricky.json') # For debugging
+#input = File.read('../test/tricky.xml') # For debugging
 input = STDIN.gets
 
 if input == nil || input == ""
@@ -31,11 +31,7 @@ end
 
 class String
   def to_html
-    if self[0,1] == "%"
-      " &#37 " + self[1,self.length-1]
-    else
-      self
-    end
+    self
   end
 end
 
