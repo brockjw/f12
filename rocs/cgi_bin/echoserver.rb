@@ -36,7 +36,6 @@ class String
     else
       self
     end
-    self
   end
 end
 
